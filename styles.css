@@ -1,0 +1,11 @@
+/* Custom CSS */
+.grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 300px 50%;
+}
+
+.box4 {
+    background: deepskyblue;
+    grid-column: 1/4;
+}

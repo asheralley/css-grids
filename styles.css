@@ -1,11 +1,31 @@
 /* Custom CSS */
-.grid {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 300px 300px 50%;
+h1 {
+  text-align: center;
 }
-
+.grid {
+  height: 80vh;
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template:
+    'header header' 100px
+    'main aside' 1fr
+    'footer footer' 100px
+    / 1fr 200px;
+}
+.box1 {
+  grid-area: header;
+  background: dodgerblue;
+}
+.box2 {
+  grid-area: main;
+  background: salmon;
+}
+.box3 {
+  grid-area: aside;
+  background: lightgrey;
+}
 .box4 {
-    background: deepskyblue;
-    grid-column: 1/4;
+  grid-area: footer;
+  background: forestgreen;
 }
